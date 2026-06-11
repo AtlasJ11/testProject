@@ -1,0 +1,133 @@
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Main container */
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Add button */
+#addBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    transform: scale(1.02);
+}
+
+/* Transaction list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each transaction */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #f9f9f9;
+    margin-top: 10px;
+    padding: 12px;
+
+    border-radius: 8px;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+}
+
+/* Balance */
+#balance {
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.income-box,
+.expense-box {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.income-box {
+    background-color: #d4edda;
+}
+
+.expense-box {
+    background-color: #f8d7da;
+}
+
+#income {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#expense {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.income-transaction {
+    border-left: 5px solid green;
+}
+
+.expense-transaction {
+    border-left: 5px solid red;
+}
