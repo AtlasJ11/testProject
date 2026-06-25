@@ -100,7 +100,7 @@ function render() {
         );
 
     document.getElementById("balance").textContent =
-        `$${balance}`;
+        `Remaining: $${balance}`;
 
     const income =
         transactions
@@ -117,6 +117,16 @@ function render() {
 
     document.getElementById("expense").textContent =
         `$${expense}`;
+    const balanceElement =
+        document.getElementById("balance");
+
+    balanceElement.textContent = `$${balance}`;
+
+    if (balance >= 0) {
+        balanceElement.style.color = "green";
+    } else {
+        balanceElement.style.color = "red";
+    }
 }
-    
+
 render();
